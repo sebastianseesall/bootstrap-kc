@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Web Project</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Registration Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Central Content -->
+  <main class="container-fluid" id="home">
+
+    <!-- Image Banner Section -->
+    <section class="mb-4" aria-label="Main Banner">
+      <img src="https://flashpoint.io/wp-content/uploads/OSINT-Tech-Expo-25_1200x628.png" class="img-fluid w-100" alt="Main Banner">
+    </section>
+
+    <!-- Profile Image Section -->
+    <section class="text-center mb-4" id="about" aria-label="About Section">
+      <img src="https://the-take.com/assets/img/article/ryan-gosling-big-short-large.jpg" class="rounded-circle mb-3" alt="Profile Picture">
+      <p class="lead">Welcome! Below you'll find a registration form and data table coded using bootstrap.</p>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="text-center mb-5" aria-label="Action Buttons">
+      <button class="btn btn-primary me-2">Always Visible</button>
+      <button class="btn btn-secondary d-none d-md-inline-block">Hidden on Small Screens</button>
+    </section>
+
+    <!-- Form Section -->
+    <section aria-label="Registration Form">
+      <h2 class="mb-3">Register</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+          <div class="invalid-feedback">First name is required.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+          <div class="invalid-feedback">Last name is required.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required>
+          <div class="invalid-feedback">Password is required.</div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label" for="terms">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Table Section -->
+    <section class="mt-5 ms-6" aria-label="User Submissions Table">
+      <h2>User Submissions</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover mt-3">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Smith</td>
+              <td>jane@example.com</td>
+            </tr>
+            <tr>
+              <td>Alex</td>
+              <td>Johnson</td>
+              <td>alex@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contact Section Placeholder -->
+    <section id="contact" class="mt-5" aria-label="Contact Section">
+      <h2>Contact</h2>
+      <p>For any inquiries, please reach out via our contact page or email us directly.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 CT. All rights reserved.
+  </footer>
+
+</body>
+</html>
