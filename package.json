@@ -1,0 +1,43 @@
+{
+  "name": "bootstrap-kc",
+  "version": "1.0.0",
+  "description": "A responsive web application built with Bootstrap 5.3.3 featuring user registration, data display, and modern web design principles.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "python3 -m http.server 8000",
+    "test": "node /tmp/test.js",
+    "validate": "html-validate index.html",
+    "format": "prettier --write *.html css/*.css js/*.js",
+    "lint": "eslint js/*.js"
+  },
+  "keywords": [
+    "bootstrap",
+    "responsive",
+    "web",
+    "registration",
+    "form",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "sebastianseesall",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastianseesall/bootstrap-kc.git"
+  },
+  "homepage": "https://github.com/sebastianseesall/bootstrap-kc#readme",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "html-validate": "^8.0.0",
+    "prettier": "^3.0.0",
+    "serve": "^14.0.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -1,0 +1,135 @@
+/* Custom styles for Bootstrap Registration Project */
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+/* Custom animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced form styling */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  transition: all 0.3s ease;
+}
+
+/* Custom button hover effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced table styling */
+.table-hover tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Profile image enhancement */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Banner image enhancement */
+.banner-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.banner-img:hover {
+  transform: scale(1.02);
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(135deg, var(--dark-color) 0%, #495057 100%);
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .banner-img {
+    border-radius: 5px;
+  }
+}
+
+/* Loading animation for forms */
+.btn.loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b5ed7;
+}
